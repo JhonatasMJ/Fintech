@@ -1,14 +1,14 @@
-import { useData } from '@/Contexts/DataContext'
-import React from 'react'
+import DateRange from "./DateRange"
+
 
 const Header = () => {
 
- const {data} =  useData();
+
 
   return (
-    <div>
-        <h1></h1>
-    </div>
+    <header>
+        <DateRange/>
+    </header>
   )
 }
 
