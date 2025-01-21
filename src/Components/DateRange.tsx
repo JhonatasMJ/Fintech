@@ -9,10 +9,10 @@ const DateRange = () => {
 
     
   return (
-    <div>
+    <form className='box flex' onSubmit={(e) => e.preventDefault()}>
       <DateInput label='inicio' value={inicio} onChange={({target}) => setInicio(target.value)} />
       <DateInput label='fim' value={final} onChange={({target}) => setFinal(target.value)} />
-    </div>
+    </form>
   )
 }
 
