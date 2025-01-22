@@ -1,5 +1,5 @@
 
-import { IDateInput } from '@/Types/Input'
+import { IDateInput } from '../Types/Input'
 import { CSSProperties } from 'react'
 
 const  generalStyle: CSSProperties = {

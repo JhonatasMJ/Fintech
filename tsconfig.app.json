@@ -8,7 +8,7 @@
     "skipLibCheck": true,
     "baseUrl": ".", // Define a raiz do projeto
     "paths": {
-      "@/*": ["src/*"] // Cria o alias "@" para a pasta "src"
+      "@/*": ["src/*"] 
     },
 
     /* Bundler mode */

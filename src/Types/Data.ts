@@ -1,7 +1,13 @@
+import { Dispatch } from "react";
+
 export interface IDataContext {
     data: IVenda[] | null;
     loading: boolean;
-    error: string | null
+    error: string | null;
+    inicio: string;
+    final: string;
+    setInicio: Dispatch<React.SetStateAction<string>>;
+    setFinal: Dispatch<React.SetStateAction<string>>;
 }
 
 export interface IVenda {
