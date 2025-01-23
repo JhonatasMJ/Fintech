@@ -1,4 +1,5 @@
 import DateRange from "./DateRange"
+import Meses from "./Meses"
 
 
 const Header = () => {
@@ -6,8 +7,12 @@ const Header = () => {
 
 
   return (
-    <header>
+    <header className="mb">
+      <div className="mb">
         <DateRange/>
+
+      </div>
+        <Meses/>
     </header>
   )
 }
