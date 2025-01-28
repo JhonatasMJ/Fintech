@@ -21,7 +21,7 @@ if (data === null) return null;
         <span>  {data.filter((i) => i.status === 'processando').reduce((acc, item) => acc + item.preco, 0).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
         </div>
       </div>
-      <div className="box">
+      <div className="box mb">
        <h2> Gráficos</h2>
       </div>
     </section>
