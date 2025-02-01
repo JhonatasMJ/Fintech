@@ -1,6 +1,5 @@
-import VendaItem from "../Components/VendaItem";
 import { useData } from "../Contexts/DataContext";
-import React from "react";
+import VendaItem from "../Components/VendaItem";
 
 const Vendas = () => {
   const { data } = useData();
@@ -10,8 +9,7 @@ const Vendas = () => {
     <ul>
       {data.map((venda) => (
         <li key={venda.id}>
-          {" "}
-          <VendaItem venda={venda} />{" "}
+          <VendaItem venda={venda} />
         </li>
       ))}
     </ul>

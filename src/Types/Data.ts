@@ -1,4 +1,4 @@
-import { Dispatch } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export interface IDataContext {
     data: IVenda[] | null;
@@ -6,8 +6,8 @@ export interface IDataContext {
     error: string | null;
     inicio: string;
     final: string;
-    setInicio: Dispatch<React.SetStateAction<string>>;
-    setFinal: Dispatch<React.SetStateAction<string>>;
+    setInicio: Dispatch<SetStateAction<string>>;
+    setFinal: Dispatch<SetStateAction<string>>;
 }
 
 export interface IVenda {
@@ -20,3 +20,6 @@ export interface IVenda {
     parcelas: number | null
 }
 
+
+
+export type VendaSemData = Omit<IVenda, 'data'>
