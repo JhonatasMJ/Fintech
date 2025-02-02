@@ -21,5 +21,13 @@ export interface IVenda {
 }
 
 
+export interface VendaDia {
+    data:string,
+    pago:number,
+    processando:number,
+    falha:number
+}
 
+
+/* Copia da interface IVenda e tira o data */
 export type VendaSemData = Omit<IVenda, 'data'>

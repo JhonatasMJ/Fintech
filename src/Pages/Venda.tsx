@@ -1,6 +1,6 @@
 import Loading from '../Components/Loading';
 import useFetch from '../Hooks/useFetch';
-import { IVenda, VendaSemData } from '../Types/Data';
+import {  VendaSemData } from '../Types/Data';
 import { useParams } from 'react-router-dom';
 
 const Venda = () => {

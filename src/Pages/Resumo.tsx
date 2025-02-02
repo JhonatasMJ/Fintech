@@ -1,11 +1,18 @@
 
+import GraficoVendas from "../Components/GraficoVendas";
+
 import { useData } from "../Contexts/DataContext";
+
+
+
 
 const Resumo = () => {
   const { data } = useData();
 
   if (data === null) return null;
   return (
+    <>
+
     <section>
       <div className="resumo flex mb">
         <div className="box">
@@ -36,8 +43,11 @@ const Resumo = () => {
           </span>
         </div>
       </div>
-
+    <div className="box md">
+      <GraficoVendas data={data}/>
+    </div>
     </section>
+    </>
   );
 };
 
