@@ -7,12 +7,12 @@ const style: CSSProperties = {
     height: 'var(--gap)',
     borderRadius: '50%',
     borderRightColor: 'var(--color-4)',
-    animation: "spin 1s infinite",
+    animation: "spin 1s linear infinite",
 } 
 
 const Loading = () => {
   return (
-    <div style={style}>Loading</div>
+    <div style={style}></div>
   )
 }
 
