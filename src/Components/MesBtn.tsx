@@ -38,7 +38,7 @@ const MesBtn = ({ n }: { n: number }) => {
   }
 
   return (
-    <button style={style} onClick={() => setMes(n)}>
+    <button type="button" style={style} onClick={() => setMes(n)}>
       {nomeMes(n)}
     </button>
   );

@@ -1,5 +1,5 @@
 
-import Preloader from "../Components/PreLoader";
+
 import GraficoVendas from "../Components/GraficoVendas";
 
 import { useData } from "../Contexts/DataContext";
@@ -13,7 +13,7 @@ const Resumo = () => {
   if (data === null) return null;
   return (
     <>
-  <Preloader />
+
     <section>
       <div className="resumo flex mb">
         <div className="box">
